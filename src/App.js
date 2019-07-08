@@ -2,15 +2,13 @@ import React from 'react';
 import './App.css';
 import Palette from './palette';
 import palettes from './seedColor';
-import {generatePalette} from './colorHelper'
+import { generatePalette } from './colorHelper';
+import { Navbar } from './navbar';
 
 function App() {
-  console.log(generatePalette(palettes[4]));
   return (
     <div className="App">
-      <header className="App-header">
-       <Palette data={generatePalette(palettes[4])}></Palette>
-      </header>
+      <Palette data={generatePalette(palettes[4])}></Palette>
     </div>
   );
 }

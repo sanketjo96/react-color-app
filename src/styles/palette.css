@@ -4,26 +4,3 @@
 .palette-colors{
     height: 90%;
 }
-
-.palette-slider {
-    margin: 15px;
-    width: 25%;
-}
-
-.rc-slider-track {
-    background-color: transparent;
-}
-
-.rc-slider-rail {
-    height: 10px;
-}
-
-.rc-slider-handle,
-.rc-slider-handle:focus,
-.rc-slider-handle:active,
-.rc-slider-handle:hover {
-   margin-top: -4px;
-   width: 17px;
-   height: 17px;
-   border-color: green  
-}
