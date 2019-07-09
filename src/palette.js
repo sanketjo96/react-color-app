@@ -3,6 +3,7 @@ import ColorBox from './colorbox';
 import './styles/palette.css';
 
 import Navbar from './navbar';
+import Footer from './footer';
 
 class Palette extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class Palette extends Component {
     }
 
     render() {
-        const { colors } = this.props.data;
+        const { paletteName, emoji, colors } = this.props.data;
         const { level, format } = this.state;
         const colorsMarkUp = colors[level].map(color => {
             return <ColorBox key={color.name} shade={color[format]} name={color.name}></ColorBox>;
@@ -41,6 +42,8 @@ class Palette extends Component {
                 <div className="palette-colors">
                     {colorsMarkUp}
                 </div>
+
+                <Footer name={paletteName} emoji={emoji}></Footer>
             </div>
         );
     }
