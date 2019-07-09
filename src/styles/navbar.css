@@ -39,3 +39,8 @@
    height: 17px;
    border-color: green  
 }
+
+.format-select {
+   margin-left: auto;
+   margin-right: 10px;
+}
