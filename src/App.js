@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact render={() => <PaletteList data={palettes}></PaletteList>}></Route>
+          <Route path="/" exact render={(routeProps) => <PaletteList data={palettes} {...routeProps}></PaletteList>}></Route>
           <Route path="/palette/:id" exact render={(args) => {
             return <Palette data={getPaletteById(args.match.params.id)}></Palette>
           }}>
